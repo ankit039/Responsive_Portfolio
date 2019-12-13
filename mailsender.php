@@ -22,23 +22,22 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
-    $mail->SMTPDebug = 1;                      // Enable verbose debug output
-    $mail->isSMTP();                                            // Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = "$username_mail";                     // SMTP username
-    $mail->Password   = "$username_pwd";                               // SMTP password
-    $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
-    $mail->Port       = 587;                                    // TCP port to connect to
+    $mail->SMTPDebug = 1;                       // Enable verbose debug output
+    $mail->isSMTP();                           // Send using SMTP
+    $mail->Host       = 'smtp.gmail.com';     // Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                // Enable SMTP authentication
+    $mail->Username   = "$username_mail";   // SMTP username
+    $mail->Password   = "$username_pwd";   // SMTP password
+    $mail->SMTPSecure = 'tls';            // Enable TLS encryption;`PHPMailer::ENCRYPTION_SMTPS`also accepted
+    $mail->Port       = 587;             // TCP port to connect to
 
     //Recipients
     session_start();
     $getmail = $_SESSION["email"];
-    $mail->setFrom('nsshabbo@gmail.com', 'Contact Form of '.$name);
+    $mail->setFrom('abc@gmail.com', 'Contact Form of '.$name);
     $mail->addAddress("ryder.raj.ankit@gmail.com");     // Add a recipient
 
-
-    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->isHTML(true);                              // Set email format to HTML
     $mail->Subject = 'Contact Form of '.$name;
     $mail->Body    = "$message";
 
