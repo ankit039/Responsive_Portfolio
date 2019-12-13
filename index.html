@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #f2f2f2; 
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #888;
+  color: white;
+  font-size: 20px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.section1area{
+	background: url(https://www.nettigritty.com/images/darksquares.png) no-repeat center center fixed; 
+    background-size: cover;
+	height: 715px;
+}
+.section2area{
+	background-color: #888; 
+    background-size: cover;
+	height: 600px;
+}
+
+@media screen and (min-width: 601px) {
+  div.section1h1 {
+    font-size: 80px;
+    color: #fff;
+  }
+  div.section2h1 {
+    font-size: 60px;
+    color: #fff;
+  }
+  div.section1p {
+    font-size: 29px;
+    text-align: center;
+    color: #fff;
+  }
+  div.section2p {
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 600px) {
+  div.section1h1 {
+    font-size: 40px;
+    color: #fff;
+  }
+  div.section2h1 {
+    font-size: 40px;
+    color: #fff;
+  }
+  div.section1p {
+    font-size: 20px;
+    text-align: center;
+    text-align: left;
+    color: #fff;
+  }
+  div.section2p {
+    font-size: 15px;
+    color: #fff;
+  }
+}
+hr { 
+  width:10%; 
+  height:5px; 
+  border-radius: 20px;
+  padding: 2px;
+  background: #808080;
+}
+.zoom {
+  transition: transform .2s;
+}
+.zoom:hover {
+  transform: scale(1.1);
+}
+button {
+  background-color: #989898;
+  color: black;
+  border-radius: 25px;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 1;
+}
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  margin-left: 11%;
+  border-radius: 25px 0px 0px 25px;
+  padding: 10px;
+  background: #888888;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  border-radius: 0px 25px 25px 0px;
+  width: 60%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+<br><br>
+<div class="section1area" id="section1">
+  <div class="container">
+  	<div style="text-align:center;">
+      <br><br>
+  <div class="section1h1"> Hey! It's Nice To See <br> You On Here..</div>
+  <div align="center"><hr></div>
+</div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="section1p">I would like to explore the world of development that is Web Development as</div><br><br>
+      <div class="section1p">Full Stack Developer as well as Android Development mostly in Unity 2D/3D.</div><br><br>
+      <div class="section1p">I would like to help, if i can. Find more about me below.</div><br><br>
+    </div>
+  </div>
+  <div align="center"><a href="#section2"><button class="center"><strong>More!</strong></button></a></div>
+</div>
+</div>
+
+<div class="section2area" id="section2">
+  <div class="container">
+  	<div style="text-align:center;">
+      <br><br>
+  <div class="section2h1">Know more about me</div>
+  <div align="center"><hr></div>
+</div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="section2p">Hello, I am Ankit Raj a second year student studing in Jaypee University of Engineering and Technology,Guna.</div><br><br>
+      <div class="section2p">And Campus Ambassador in CODING BLOCKS as well as Joint Secretary Development in Computer Society of India,Guna.</div><br><br>
+      <div class="section2p">As i found development more intresting hence i like to do same most of the time.</div><br><br>
+      <div class="section2p"></div><br><br>
+    </div>
+  </div>
+  <div align="center"><a href="#section3"><button class="center"><strong>Skills!</strong></button></a></div>
+</div>
+</div>
+
+<div id="section3">
+	<br><br>
+<div style="color:#000;padding:15px;text-align:center;">
+  <h1>Skills!</h1>
+</div>
+<div align="center"><hr></div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2" align="center">
+      <img src="./html5.svg" class="zoom" height="120" width="120">
+      <h3>HTML 5</h3>
+    </div>
+    <div class="col-sm-2" align="center">
+      <img src="./css3.svg" class="zoom" height="120" width="120">
+      <h3>CSS 3</h3>
+    </div>
+    <div class="col-sm-2" align="center">
+      <img src="./php.svg" class="zoom" height="120" width="120">
+      <h3>PHP</h3>
+    </div>
+    <div class="col-sm-2" align="center">
+      <img src="./mysql.svg" class="zoom" height="120" width="120">
+      <h3>MYSQL</h3>
+    </div>
+    <div class="col-sm-2" align="center">
+      <img src="./github.svg" class="zoom" height="120" width="120">
+      <h3>GITHUB</h3>
+    </div>
+    <div class="col-sm-2" align="center">
+      <img src="./unity.svg" class="zoom" height="120" width="120">
+      <h3>UNITY</h3>
+    </div>
+    <div class="col-sm-2" align="center">
+      <img src="./visualstudio.svg" class="zoom" height="120" width="120">
+      <h3>VISUAL STUDIO</h3>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="section4">
+	<br><br>
+<div style="color:#000;padding:15px;text-align:center;">
+  <h1>Projects!</h1>
+</div>
+<div align="center"><hr></div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6" align="center">
+      <a href="http://agencydeveloper.000webhostapp.com/"><img src="https://i.imgur.com/reDtrOG.jpg" class="zoom" height="250" width="350"></a>
+      <h3>A website to manage Agency!</h3>
+    </div>
+    <div class="col-sm-6" align="center">
+      <a href="http://warfortrezor.epizy.com/"><img src="https://i.imgur.com/xhXeX7q.jpg" class="zoom" height="250" width="350"></a>
+      <h3>A portal for War For Trezor!</h3>
+    </div>
+    <div class="col-sm-6" align="center">
+      <a href="http://oedr.000webhostapp.com/"><img src="https://i.imgur.com/qvMCHaX.jpg" class="zoom" height="250" width="350"></a>
+      <h3>A website for Education and Free Books!</h3>
+    </div>
+    <div class="col-sm-6" align="center">
+      <a href="http://nssagency.epizy.com/"><img src="https://i.imgur.com/xmSFoKL.jpg" class="zoom" height="250" width="350"></a>
+      <h3>A website for E-mail Verification while SIGNUP!</h3>
+    </div>
+    <div class="col-sm-6" align="center">
+      <a href="http://nsshabbo.000webhostapp.com/"><img src="https://i.imgur.com/jWk2Xps.jpg" class="zoom" height="250" width="350"></a>
+      <h3>A website for National Security Service Habbo!</h3>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="section5">
+	<br><br>
+<div style="color:#000;padding:15px;text-align:center;">
+  <h1>Contact</h1>
+</div>
+<div align="center"><hr></div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12" align="center">
+      <img src="https://i.imgur.com/ZlkQTXK.jpg" class="zoom" height="250" width="250" style="border-radius: 60%">
+    </div>
+    <div  class="col-sm-6" align="center"><img src="https://i.imgur.com/eI2YhDn.jpg">
+      <h3 style="color: blue">+91-8579961909</h3>
+    </div>
+    <div class="col-sm-6" align="center"><img src="https://i.imgur.com/5FWZ3Nz.jpg">
+      <a href="mailto:ryder.raj.ankit@gmail.com"><h3>ryder.raj.ankit@gmail.com</h3></a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="section6">
+	<div align="center">
+<form action="./mailsender.php" style="max-width:400px;margin:auto" method="post">
+  <h1>Contact Form</h1>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Name" name="name">
+  </div>
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-phone icon"></i>
+    <input class="input-field" type="text" placeholder="Phone Number" name="pno">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-quote-left icon"></i>
+    <textarea class="input-field" type="text" name="msg" rows="4" cols="15" placeholder="Why you what to contact him?"></textarea>
+  </div>
+  <button class="btn" id="login" type="submit" name="submit">Submit</button>
+</form>
+<br>
+</div>
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright aboutankit.epizy.com</div>
+
+<div class="topnav" id="myTopnav" style="position: fixed;
+  top: 0;
+  width: 100%;">
+  <a href="#section1" class="active">Ankit Raj</a>
+  <a href="#section2">About</a>
+  <a href="#section3">Skill</a>
+  <a href="#section4">Project</a>
+  <a href="#section5">Contact</a>
+  <a href="#section6">Contact Form</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
