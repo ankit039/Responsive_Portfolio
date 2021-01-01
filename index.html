@@ -362,12 +362,8 @@ button:hover {
 
 <script>
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+  let { className } = document.getElementById('myTopNav');
+  className = className && 'topnav responsive'; // Get mindfucked. Good Luck!
 }
 </script>
 
